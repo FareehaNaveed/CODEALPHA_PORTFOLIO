@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #666;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fareeha Naveed</h1>
+    <p>Frontend Developer | JavaScript, HTML, CSS</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am learning Frontend Development including HTML, CSS, and JavaScript. I build interactive websites and web applications.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Image Gallery</h3>
+            <p>Interactive image gallery with lightbox.</p>
+            <a href="image_gallery.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Calculator</h3>
+            <p>Basic calculator with real-time results.</p>
+            <a href="calculator.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Music Player</h3>
+            <p>Audio player with playlist and controls.</p>
+            <a href="music_player.html" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: fariyaghul@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/fareeha-naveed" target="_blank">My LinkedIn</a></p>
+</section>
+
+</body>
+</html>
